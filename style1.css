@@ -1,0 +1,36 @@
+body{
+    background-color: #222; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+}
+
+.card{
+ background-color: white;
+ width: 400px;   
+ padding: 15px;
+ border-radius: 8px;
+ text-align: center;
+ position: relative;
+}
+
+.card-header{
+background-color: #ff0080;
+color: black;
+border: 1%;
+font-weight: bold;
+padding: 10px;
+font-size: 25px;
+margin-bottom: 10px;
+position: relative;
+bottom: 25px;
+}
+
+.card-body{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}

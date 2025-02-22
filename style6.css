@@ -1,0 +1,735 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+    width: 80%; 
+    margin: 0 auto;
+    font: bold;
+}
+
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav li{
+    padding: 10px;
+}
+
+.sign-up button {
+    color: rgba(0, 101, 254, 1);
+    padding: 10px;
+    border: none;
+    background: none;
+}
+
+#button-2 {
+    background-color: rgba(0, 101, 254, 1);
+    border-radius: 100px;
+    color:#ffffff;
+    width: 142px;
+    height: 44px;
+}
+
+
+/* Hero Section */
+
+
+.first-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 948px;
+    height: 313px;
+    text-align: center;
+    margin: 100px auto 0 auto; /* Auto centers it horizontally */
+}
+
+
+.first-div h3{
+    font-size: 48px;
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 948px;
+    height: 200px;
+}
+
+.first-div h3 span {
+    position: relative;
+    color: #0057FF; /* Blue color */
+    font-weight: bold;
+}
+
+.first-div h3 span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -25px; /* Adjust to position the underline */
+    width: 100%;
+    height: 25px; /* Thickness of the brush stroke */
+    background-image: url('./Images/brush-stroke.png'); /* Use a brush-style underline */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-div p{
+    text-align: center;
+    width: 781px;
+    height:  105px;
+    font:18px;
+    margin-bottom: 20px;
+}
+
+.hero-button{
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+#button-3{
+    background-color: rgba(0, 101, 254, 1);
+    border-radius: 100px;
+    color:#ffffff;
+    width: 142px;
+    height: 44px;
+    border: none;
+}
+
+#learn-more{
+    color: rgba(0, 101, 254, 1);
+    padding: 10px;
+    border: none;
+    background: none;
+}
+
+/* The images */
+
+.link-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 768px; /* Ensure it takes the width of the larger image */
+    height: 251px; /* Use the taller image's height */
+    margin: 0 auto; /* Keeps it centered */
+    position: relative; /* Needed for absolute positioning inside */
+    overflow: hidden; /* Prevents extra space */
+}
+
+
+.link-illustrator-1 {
+    width: 238px;
+    height: 251px;
+    position: absolute; /* Positions it inside the div */
+    left: 0; /* Moves it to the left */
+}
+
+.link-illustrator-2 {
+    width: 768px;
+    height: 224px;
+    position: absolute; /* Stacks on top of the first image */
+    top: 0; /* Align to the top */
+    left: 0; /* Align it properly */
+    z-index: 1; /* Ensures it stays above the first image */
+    margin-top: 10px;
+}
+
+
+.disc img{
+    width: 958px;
+    height: auto;
+    margin-top: 15px;
+}
+
+
+.rates{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Heading Section */
+.rates-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+.rates-heading span {
+    color: #007BFF; 
+}
+
+/* Stats Section */
+.rates-stats {
+    display: flex;
+    gap: 50px; 
+}
+
+.stats-item {
+    text-align: left;
+}
+
+.stats-number {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.stats-label {
+    font-size: 16px;
+    color: #000000; 
+}
+
+
+
+
+
+/* Pecks section */
+
+.choose-section {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* Left Section */
+.choose-text {
+    max-width: 40%;
+    top: 0;
+}
+
+.choose-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.choose-text span {
+    color: #007BFF; /* Blue color */
+}
+
+/* Right Section */
+.choose-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 55%;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+/* Pricing Section */
+
+.pricing-section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: 0 auto;;
+    text-align: center; 
+}
+
+.pricing-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.pricing-title span {
+    color: #007BFF; 
+}
+
+.pricing-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+/* Pricing Cards */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pricing-card {
+    background: white;
+    padding-left: 20px;
+    padding-top: 50px;
+    border: 1px solid rgba(0, 90, 226, 1);
+    border-radius: 10px;
+    width: 379px;
+    height: 455px;
+    text-align: left; 
+}
+
+.pricing-card h3 {
+    font-size: 43px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+}
+
+.plan-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Professional Plan (Middle One) */
+.professional {
+    background: #1D2B53;
+    color: white;
+    transform: scale(1.1);
+    position: relative;
+}
+
+.professional p{
+    color: white;
+}
+
+.professional p span{
+    color: white;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: left;
+    justify-content: left; 
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Placeholder for Icons */
+.icon-placeholder {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Buttons */
+.pricing-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.pricing-buttons button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+    margin-top: 40px;
+}
+
+.outline-btn {
+    background: transparent;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+}
+
+.filled-btn {
+    background: #007BFF;
+    color: white;
+}
+
+
+/* Form section */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    height: 100%;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: 
+        linear-gradient(to bottom, rgba(30, 52, 72, 1), rgba(30, 52, 72, 0)), 
+        url('./Images/background-image.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.gradient-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px; /* Adjust size as needed */
+    height: auto;
+}
+
+.gradient-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px; 
+    height: auto;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    z-index: 2; 
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    align-items: center;
+    width: 100%;
+    color: rgba(50, 132, 255, 1);
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #0057FF; 
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    color: rgba(50, 132, 255, 1);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    columns: rgba(50, 132, 255, 1);
+}
+
+input::placeholder{
+    color: rgba(50, 132, 255, 1);
+}
+
+.dropdown {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #0057FF;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    color: rgba(50, 132, 255, 1);
+}
+
+/* Button */
+.trim-btn {
+    background-color: #0057FF;
+    color: white;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.trim-btn:hover {
+    background-color: #0040CC; 
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Terms and Conditions */
+.terms {
+    font-size: 14px;
+    color: rgba(50, 132, 255, 1);
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    color: #0057FF;
+}
+
+/* FAQ */
+
+.faq {
+    background: white;
+    /* padding: 50px 0; */
+    width: 100vw;
+}
+
+.faq-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.faq-container {
+    background: white;
+    width: 792px;
+    padding: 30px 5%;
+    text-align: center;
+}
+
+.faq-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-header {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.faq-item, .faq-item-2 {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.faq-item-2 {
+    text-align: left;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+/* Left Image */
+.faq-img-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+}
+
+/* Right Image */
+.faq-img-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+}
+
+
+/* Link section */
+
+
+.link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #0d253f;
+    color: white;
+    overflow: hidden;
+    padding: 50px 0; 
+}
+
+.link-content {
+    position: relative;
+    z-index: 2;
+}
+
+.link-content h1 {
+    font-size: 40px; 
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.cta-btn {
+    background: #007bff;
+    color: white;
+    padding: 14px 28px; 
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background: #0056b3;
+}
+
+.wavy {
+    position: absolute;
+    width: 40%;
+    opacity: 1; 
+}
+
+.wavy-top {
+    top: 0;
+    left: 0;
+}
+
+.wavy-bottom {
+    bottom: 0;
+    right: 0;
+}
+
+/* Footer */
+footer{
+    padding: 50px;
+}
+
+.footer-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons{
+    padding-top: 20px;
+}
+
+.black-logo{
+    width: 99px;
+    height: 24px;
+}
+
+.media-icons{
+    height: 24px;
+    width: 24px;
+    margin-top: 12px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.column h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.column p {
+    font-size: 14px;
+    margin: 6px 0; 
+    color: #333;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer .footer-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+
+.footer .footer-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
